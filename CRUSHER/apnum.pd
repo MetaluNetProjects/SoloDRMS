@@ -1,0 +1,8 @@
+#N canvas 325 52 450 300 12;
+#X obj 102 119 nbx 5 18 -1e+37 1e+37 0 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 256;
+#X obj 213 136 apf \$1 \$2;
+#X obj 102 180 outlet;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X coords 0 -1 1 1 85 40 1 100 100;
