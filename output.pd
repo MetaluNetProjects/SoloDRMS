@@ -13,6 +13,7 @@
 #X obj 85 168 z~ 64;
 #X obj 85 193 *~, f 7;
 #X obj 86 60 hip~ 5;
+#X obj 145 219 s~ copy-dac\$1;
 #X connect 0 0 13 0;
 #X connect 2 0 7 0;
 #X connect 2 0 10 0;
@@ -26,5 +27,6 @@
 #X connect 10 0 12 1;
 #X connect 11 0 12 0;
 #X connect 12 0 1 0;
+#X connect 12 0 14 0;
 #X connect 13 0 2 0;
 #X coords 0 300 1 299 130 120 0;
