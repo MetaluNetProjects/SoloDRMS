@@ -1,12 +1,12 @@
-#N canvas 582 44 702 586 12;
+#N canvas 582 81 702 586 12;
 #X declare -path AutoPreset;
 #X declare -path zexy -lib zexy;
 #X declare -path iemlib -lib iemlib;
 #X declare -path .;
 #X declare -path effets;
 #X declare -path moonlib;
-#X declare -path creb;
 #X declare -path cyclone;
+#X declare -path creb -lib creb;
 #N canvas 20 208 450 300 declares 0;
 #X obj 33 32 declare -path AutoPreset;
 #X obj 33 56 declare -path zexy -lib zexy;
@@ -14,27 +14,29 @@
 #X obj 34 194 declare -path .;
 #X obj 36 219 declare -path effets;
 #X obj 32 103 declare -path moonlib;
-#X obj 33 126 declare -path creb;
 #X obj 34 150 declare -path cyclone;
+#X obj 33 126 declare -path creb -lib creb;
 #X restore 10 6 pd declares;
 #N canvas 25 402 450 300 presets 0;
 #X obj 74 31 apmaster CONFIG;
 #X obj 78 121 apmasterfile CONFIG config.txt;
 #X obj 285 96 r CONFIG-save;
 #X obj 78 72 loadbang;
-#X obj 78 97 bng 20 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 78 97 bng 20 250 50 0 empty empty empty 0 -10 0 12 -262144 -1
+-1;
 #X connect 2 0 1 1;
 #X connect 3 0 4 0;
 #X connect 4 0 1 0;
 #X restore 10 31 pd presets;
-#X obj 108 29 bng 20 250 50 0 CONFIG-save CONFIG-save CONFIG-save 0 -10 0 12 #ff0400 #000000 #000000;
+#X obj 108 29 bng 20 250 50 0 CONFIG-save CONFIG-save CONFIG-save 0
+-10 0 12 -258113 -1 -1;
 #X obj 11 102 input 1;
 #X obj 77 102 input 2;
 #X obj 141 102 input 3;
 #X obj 207 102 input 4;
 #X obj 271 102 input 5;
 #X obj 337 102 input 6;
-#N canvas -32 93 1040 532 stuff 0;
+#N canvas 1 93 1040 532 stuff 0;
 #X obj 64 12 loadbang;
 #X msg 64 51 1;
 #X obj 64 76 s inputs-gain-adj;
@@ -78,7 +80,7 @@
 #X obj 405 383 + 27;
 #X obj 405 435 list prepend;
 #X msg 197 382 0;
-#X floatatom 471 283 5 0 0 0 - - - 0;
+#X floatatom 471 283 5 0 0 0 - - -;
 #X obj 66 323 route 127 0, f 38;
 #X obj 197 350 route 28 29 30 31;
 #X obj 720 36 r debut-concert;
@@ -164,14 +166,15 @@
 #X connect 60 0 58 0;
 #X restore 10 56 pd stuff;
 #N canvas 71 324 382 209 output 0;
-#X obj 25 53 vu 20 80 out1-vu 1 -1 -10 0 12 #404040 #000000 0 0;
-#X obj 48 53 vu 20 80 out2-vu 2 -1 -10 0 12 #404040 #000000 0 0;
-#X obj 71 53 vu 20 80 out3-vu 3 -1 -10 0 12 #404040 #000000 0 0;
-#X obj 94 53 vu 20 80 out4-vu 4 -1 -10 0 12 #404040 #000000 0 0;
+#X obj 25 53 vu 20 80 out1-vu 1 -1 -10 0 12 -66577 -1 0 0;
+#X obj 48 53 vu 20 80 out2-vu 2 -1 -10 0 12 -66577 -1 0 0;
+#X obj 71 53 vu 20 80 out3-vu 3 -1 -10 0 12 -66577 -1 0 0;
+#X obj 94 53 vu 20 80 out4-vu 4 -1 -10 0 12 -66577 -1 0 0;
 #X obj 208 23 clone -s 1 output 4;
 #X msg 211 72 0.5;
-#X obj 131 92 cnv 3 34 3 empty empty empty 20 12 0 12 #000000 #404040 0;
-#X obj 138 53 vsl 20 80 0 1 0 0 master-vol-snd master-vol-rcv master\ out -20 -10 0 12 #ff0400 #000000 #000000 0 1;
+#X obj 131 92 cnv 3 34 3 empty empty empty 20 12 0 12 -1 -66577 0;
+#X obj 138 53 vsl 20 80 0 1 0 0 master-vol-snd master-vol-rcv master\\\ out
+-20 -10 0 12 -258113 -1 -1 0 1;
 #X connect 5 0 7 0;
 #X coords 0 -1 1 1 170 120 1 20 20;
 #X restore 13 359 pd output;
@@ -185,10 +188,14 @@
 #X text 336 78 ride;
 #X obj 243 282 REVERB/main 3;
 #X obj 358 282 CRUSHER/main 4;
-#X obj 406 171 cnv 3 34 3 empty empty empty 20 12 0 12 #000000 #404040 0;
-#X obj 413 112 vsl 20 120 0 2 0 0 inputs-gain-adj inputs-gain-adj master\ in 0 -9 0 12 #ff8300 #000000 #000000 0 1;
-#X obj 519 32 bng 80 250 50 0 debut-concert debut-concert Début\ Concert 0 -10 0 12 #00ff04 #000000 #000000;
+#X obj 406 171 cnv 3 34 3 empty empty empty 20 12 0 12 -1 -66577 0
+;
+#X obj 413 112 vsl 20 120 0 2 0 0 inputs-gain-adj inputs-gain-adj master\\\ in
+0 -9 0 12 -260097 -1 -1 0 1;
+#X obj 519 32 bng 80 250 50 0 debut-concert debut-concert Début\\\ Concert
+0 -10 0 12 -4034 -1 -1;
 #X obj 519 227 Timer TConcert;
 #X obj 424 383 Timer TMode;
-#X obj 519 137 bng 80 250 50 0 fin-concert fin-concert Fin\ Concert 0 -10 0 12 #faff00 #000000 #000000;
+#X obj 519 137 bng 80 250 50 0 fin-concert fin-concert Fin\\\ Concert
+0 -10 0 12 -257985 -1 -1;
 #X obj 13 485 recorder;
