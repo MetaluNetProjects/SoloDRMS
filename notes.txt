@@ -1,0 +1,61 @@
+Fader 3 : gain des entrées
+Fader 4 : master des sorties
+---------------------
+
+
+1: ECHO
+
+---------------------
+2: DISTO
+
+dispositif :
+gate sur tous mics
+kick : tous les HP
+snares + tom : "rnd-diff" + room rev
+cymbales : hihat gauche ; ride droite
+
+plan : 60 BPM
+- cymbales gates
+- kick
+- jeu espacé sur les futs (bien entendre les sons et la multi-diff) - snares sans timbre
+- on lache tout !
+- kick seul
+
+---------------------
+3: REVERB
+
+dispositif :
+1 reverb cymbales + hautes freq des snares ; elle se déplace aleatoirement par a-coups
+1 reverb futs ; elle "tourne" dans l'espace
+kick: sonorisé ; l'attaque pompe la reverb cymbales, plus longtemps si plus fort
+
+modifieurs:
+pad 9 : fixe le temps de la pompe (285ms)
+pad 10 : pompe aussi la reverb futs
+pad 11 : coupe les hautes freq snares dans reverb cymbales
+
+plan: 105 BPM
+kick seul lent (effet de pompe reverb)
+rythmique 7/8 kick + rim, puis hihat
+
+stop kick, passage calme : jeu cymbales - intro harmoniques snares
+(activation pompe snares: pads 9 10 et 11)
+retour kick "techno"
+stop pompe snares, "chant" des snares (débit continu et accents) sur pompe cymbales
+jouer des contrastes sur intensité kick
+retour pompe longue durée
+
+
+4: CRUSHER
+
+Fader 1 : réglages freq ring et timbres
+Glides sur cymbales
+
+plan :
+cymbales avec "brosses à chiotte"; jeu avec/sans attaques pour déclencher glide
+intro kick
+jeu exploration des snares (toujours mailloches)
+
+modification timbre (Fader 1 à fond) - retour aux baguettes - jeu free dense
+
+retour timbre initial ; jeu tribal (BPM130) basé sur dialogue kick/tom

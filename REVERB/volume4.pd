@@ -26,7 +26,9 @@
 #X obj 472 48 sel 0 1, f 12;
 #X msg 472 73 1500;
 #X obj 282 135 max 100;
-#X msg 512 72 250;
+#X msg 512 72 285;
+#X msg 410 92 285;
+#X msg 370 93 100;
 #X connect 0 0 2 0;
 #X connect 2 0 1 0;
 #X connect 3 0 5 0;
@@ -51,8 +53,11 @@
 #X connect 22 0 21 0;
 #X connect 23 0 24 0;
 #X connect 24 0 25 0;
+#X connect 24 0 29 0;
 #X connect 24 1 27 0;
 #X connect 25 0 22 1;
 #X connect 26 0 16 0;
 #X connect 26 0 22 0;
 #X connect 27 0 22 1;
+#X connect 27 0 26 1;
+#X connect 29 0 26 1;

@@ -1,4 +1,4 @@
-#N canvas 0 30 1366 672 12;
+#N canvas 434 53 910 426 12;
 #X obj 15 46 tgl 20 0 \$0-on-snd \$0-on-rcv micros_inactif 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 133 39 sel 0 1, f 44;
 #X msg 133 64 label micros_inactif;
@@ -76,6 +76,10 @@
 #X obj 634 364 *~ 0.1;
 #X obj 809 368 *~ 0.1;
 #X obj 487 310 apcheb \$0-ap cheb4;
+#X obj 661 15 r \$0-on-snd;
+#X obj 661 42 sel 1;
+#X obj 661 92 s BPM;
+#X msg 661 67 60;
 #X connect 1 0 2 0;
 #X connect 1 1 3 0;
 #X connect 2 0 5 0;
@@ -178,4 +182,7 @@
 #X connect 75 0 44 3;
 #X connect 75 0 44 0;
 #X connect 76 0 36 0;
+#X connect 77 0 78 0;
+#X connect 78 0 80 0;
+#X connect 80 0 79 0;
 #X coords 0 -1 1 1 110 60 1 10 10;
