@@ -2,43 +2,8 @@ Fader 3 : gain des entrées
 Fader 4 : master des sorties
 ---------------------
 
+1: REVERB
 
-1: ECHO
-
-- boom whackers (TB mic)
-- frottage de timbre et autres (TB mic)
-- HH
-- poum tchack
-- puis la suite
-
----------------------
-2: DISTO
-
-dispositif :
-gate sur tous mics
-kick : tous les HP
-snares + tom : "rnd-diff" + room rev
-cymbales : hihat gauche ; ride droite
-triangles sur cymbales
-cloche sur CC ou dans la main
-
-plan : 60 BPM
-- cloche seule sèche jusque déclenchement
-- jeu cloche cymbales
-- démarrage CC
-- Kick
--on enlève la cloche, jeu à 2CC
-- pause cerclages/TB
-- jeu cc à deux mains+kick
-- on exploite tout le kit
-- impros jusqu'à la fin de la night !
-(- kick
-- jeu espacé sur les futs (bien entendre les sons et la multi-diff) - snares sans timbre
-- on lache tout !
-- kick seul)
-
----------------------
-3: REVERB
 
 dispositif :
 1 reverb cymbales + hautes freq des snares ; elle se déplace aleatoirement par a-coups
@@ -67,8 +32,19 @@ stop pompe snares, "chant" des snares (débit continu et accents) sur pompe cymb
 jouer des contrastes sur intensité kick
 retour pompe longue durée
 
+---------------------
 
-4: CRUSHER
+2: ECHO
+
+- HH
+- ajout boom whackers (TB mic)
+- poum tchack
+- puis la suite
+- fin
+
+-----------------------------
+
+3: CRUSHER
 
 Fader 1 : réglages freq ring et timbres
 Glides sur cymbales
@@ -82,3 +58,31 @@ jeu avec mattage des peaux
 modification timbre (Fader 1 à fond)
 Jeu de son +/- continus sur snares
 
+Transition :
+amener la cloche sur caisse claire, poser les triangles sur les cymbales
+
+-------------------------------
+
+4: DISTO
+
+dispositif :
+gate sur tous mics
+kick : tous les HP
+snares + tom : "rnd-diff" + room rev
+cymbales : hihat gauche ; ride droite
+triangles sur cymbales
+cloche sur CC ou dans la main
+
+plan : 60 BPM
+- cloche seule sèche jusque déclenchement
+- jeu cloche cymbales
+- démarrage CC
+- Kick
+-on enlève la cloche, jeu à 2CC
+- pause cerclages/TB
+- jeu cc à deux mains+kick
+- on exploite tout le kit
+- impros jusqu'à la fin de la night !
+
+Transition:
+- finir l'impro avec charley sur les croches
